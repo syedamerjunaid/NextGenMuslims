@@ -1,10 +1,35 @@
+/* Global styles */
 body {
-    background-color: lightblue;
     font-family: Arial, sans-serif;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-h1 {
-    color: darkblue;
-    font-size: 40px;
+/* Header styling */
+header {
+    background: #007bff;
+    color: white;
+    padding: 20px;
+}
+
+/* Main content */
+.content {
+    padding: 20px;
+    background: white;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
