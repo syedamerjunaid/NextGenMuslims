@@ -188,3 +188,20 @@ section {
 #dark-mode-toggle:hover {
     background: #e67e22;
 }
+
+#dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #666;
+}
