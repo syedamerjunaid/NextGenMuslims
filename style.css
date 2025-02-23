@@ -154,3 +154,37 @@ section {
         transform: translateY(0);
     }
 }
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode #hero {
+    background: url('hero-bg-dark.jpg') no-repeat center center/cover;
+}
+
+.dark-mode .btn {
+    background: #e67e22;
+}
+
+.dark-mode .btn:hover {
+    background: #d35400;
+}
+
+/* Toggle Button */
+#dark-mode-toggle {
+    padding: 8px 16px;
+    background: #f39c12;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#dark-mode-toggle:hover {
+    background: #e67e22;
+}
