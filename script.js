@@ -1,7 +1,31 @@
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("JavaScript Loaded!"); // Debugging
+    // Dark Mode Toggle
+    const toggleButton = document.getElementById("dark-mode-toggle");
+    const body = document.body;
 
-    // ✅ Navbar Toggle
+    if (toggleButton) {
+        console.log("Dark mode button found!");
+
+        // Load saved dark mode preference
+        if (localStorage.getItem("darkMode") === "enabled") {
+            body.classList.add("dark-mode");
+        }
+
+        toggleButton.addEventListener("click", function () {
+            body.classList.toggle("dark-mode");
+
+            // Save preference in localStorage
+            if (body.classList.contains("dark-mode")) {
+                localStorage.setItem("darkMode", "enabled");
+            } else {
+                localStorage.setItem("darkMode", "disabled");
+            }
+        });
+    } else {
+        console.error("Dark mode button not found!");
+    }
+
+    // Mobile Menu Toggle
     const menuToggle = document.querySelector(".menu-toggle");
     const navLinks = document.querySelector(".nav-links");
 
@@ -10,33 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
             navLinks.classList.toggle("active");
         });
     } else {
-        console.error("Menu toggle or nav links not found!");
+        console.error("Menu toggle or nav-links not found!");
     }
 
-    // ✅ Dark Mode Toggle (Fixed Variable Name)
-    const darkModeToggle = document.getElementById("dark-mode-toggle");
-    const body = document.body;
-
-    if (darkModeToggle) { 
-        console.log("Dark mode button found!");
-
-        if (localStorage.getItem("dark-mode") === "enabled") {
-            body.classList.add("dark-mode");
-            darkModeToggle.textContent = "☀ Light Mode";
-        }
-
-        darkModeToggle.addEventListener("click", () => {
-            body.classList.toggle("dark-mode");
-
-            if (body.classList.contains("dark-mode")) {
-                localStorage.setItem("dark-mode", "enabled");
-                darkModeToggle.textContent = "☀ Light Mode";
-            } else {
-                localStorage.setItem("dark-mode", "disabled");
-                darkModeToggle.textContent = "🌙 Dark Mode";
-            }
-        });
-    } else {
-        console.error("Dark Mode button not found! Check your HTML.");
-    }
+    console.log("Script loaded successfully!");
 });
