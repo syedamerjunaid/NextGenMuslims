@@ -12,11 +12,38 @@ header {
     background: #007bff;
     color: white;
     padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
-/* Main content */
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Add spacing for content so it doesn't hide under fixed header */
 .content {
-    padding: 20px;
+    padding: 100px 20px 20px;
     background: white;
     margin: 20px auto;
     width: 80%;
