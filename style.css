@@ -24,7 +24,9 @@
 
 /* Logo */
 .logo img {
-    height: 50px;
+    display: block;
+    margin: 20px auto;
+    max-width: 150px;
 }
 
 /* Navigation Links */
