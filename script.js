@@ -43,8 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
 let currentIndex = 0;
 
 function moveSlide(step) {
-    const slides = document.querySelectorAll(".carousel-slide");
-    const totalSlides = slides.length;
+    const totalSlides = document.querySelectorAll(".carousel-slide").length;
     const carousel = document.querySelector(".carousel");
 
     // Update index
@@ -54,7 +53,8 @@ function moveSlide(step) {
     carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
 
-// Auto slide every 3 seconds
-setInterval(() => moveSlide(1), 3000);
+// Auto slide every 5 seconds
+setInterval(() => moveSlide(1), 5000);
+
 
 
