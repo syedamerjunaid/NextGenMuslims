@@ -336,8 +336,10 @@ html {
 /* Full-screen images - FIXED */
 .carousel-slide img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures full coverage without distortion */
+    height: auto;
+    max-height: 100vh;
+    object-fit: contain; /* Ensures the whole image is visible */
+    background: black; /* Adds black background for shorter images */
 }
 
 /* Caption Overlay */
