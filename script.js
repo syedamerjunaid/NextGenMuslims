@@ -55,6 +55,3 @@ function moveSlide(step) {
 
 // Auto slide every 5 seconds
 setInterval(() => moveSlide(1), 5000);
-
-
-
