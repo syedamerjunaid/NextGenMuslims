@@ -45,13 +45,15 @@ let currentIndex = 0;
 function moveSlide(step) {
     const slides = document.querySelectorAll(".carousel-slide");
     const totalSlides = slides.length;
+    const carousel = document.querySelector(".carousel");
 
-    // Calculate new index
+    // Update index
     currentIndex = (currentIndex + step + totalSlides) % totalSlides;
 
     // Move slides
-    document.querySelector(".carousel").style.transform = `translateX(-${currentIndex * 100}%)`;
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
 
 // Auto slide every 3 seconds
 setInterval(() => moveSlide(1), 3000);
+
