@@ -45,30 +45,33 @@
         </div>
     </section>
     
-    <!-- Sections -->
     <section id="home">
-        <div class="home-container">
+        <div class="carousel-container">
             <h2>Our Cause</h2>
             <p>Empowering the youth with education, leadership, and digital innovation.</p>
             
-            <div class="image-gallery">
-                <div class="gallery-item">
+            <div class="carousel">
+                <div class="carousel-slide">
                     <img src="images/education.jpg" alt="Education for All">
                     <p>Providing quality education to bridge the knowledge gap.</p>
                 </div>
-                <div class="gallery-item">
+                <div class="carousel-slide">
                     <img src="images/leadership.jpg" alt="Leadership Training">
                     <p>Fostering leadership skills for the next generation.</p>
                 </div>
-                <div class="gallery-item">
+                <div class="carousel-slide">
                     <img src="images/technology.jpg" alt="Digital Innovation">
                     <p>Integrating AI and digital skills for a tech-savvy future.</p>
                 </div>
-                <div class="gallery-item">
+                <div class="carousel-slide">
                     <img src="images/community.jpg" alt="Community Support">
                     <p>Building a strong community through collaboration and mentorship.</p>
                 </div>
             </div>
+    
+            <!-- Navigation Buttons -->
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
         </div>
     </section>
     
